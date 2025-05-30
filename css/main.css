@@ -701,12 +701,23 @@ blockquote {
     overflow: auto;
     padding: 0 15px;
 }
-body {
+/* body {
     background: #f6f8fa;
     color: #1e3e3f;
     font: 500 14px Lexend, "Noto Sans SC", sans-serif;
     overflow-x: hidden;
     width: 100%;
+} */
+body {
+    background:url(/images/background.png);
+    background-repeat: no-repeat;
+    
+    /* 是否滚动，fixed固定 */
+    background-attachment: fixed; 
+          
+    /* 填充 */
+    background-size: cover;
+    background-position: center;
 }
 code {
     background: #bddcf76b;
