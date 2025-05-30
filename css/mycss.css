@@ -1,0 +1,11 @@
+body {
+    background:url(/images/background.png);
+    background-repeat: no-repeat;
+    
+    /* 是否滚动，fixed固定 */
+    background-attachment: fixed; 
+          
+    /* 填充 */
+    background-size: cover;
+    background-position: center;
+}
