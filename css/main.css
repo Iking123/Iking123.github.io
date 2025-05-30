@@ -709,7 +709,7 @@ blockquote {
     width: 100%;
 } */
 body {
-    background:url(/images/background.png);
+    background:url(/images/background.jpg);
     background-repeat: no-repeat;
     
     /* 是否滚动，fixed固定 */
