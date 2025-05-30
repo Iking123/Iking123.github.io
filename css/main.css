@@ -709,7 +709,8 @@ blockquote {
     width: 100%;
 } */
 body {
-    background:url(/images/lin-2-1.jpg);
+    background:linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
+              url(/images/lin-2-1.jpg);
     background-repeat: no-repeat;
     
     /* 是否滚动，fixed固定 */
