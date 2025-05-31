@@ -26,8 +26,8 @@ mixins.home = {
                 let body = dom.getElementsByClassName("description")[0];
 
                 // resolve abstract content
-                let content = body.textContent;
-                content = content.substring(0, 250) + "......";
+                let content = body.textContent.slice(0);
+                if(content.length>150) content = content.substring(0, 150) + "......";
                 body.innerHTML = content;
             }
         }
