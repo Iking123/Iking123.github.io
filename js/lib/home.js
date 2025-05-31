@@ -27,8 +27,10 @@ mixins.home = {
 
                 // resolve abstract content
                 let content = body.textContent.slice(0);
-                if(content.length>150) content = content.substring(0, 150) + "......";
-                body.innerHTML = content;
+                if (content.length > 150) {
+                    content = content.substring(0, 150) + "......";
+                    body.innerHTML = content;
+                }
             }
         }
     },
