@@ -195,7 +195,7 @@
             
             <span class="tag">
                 
-                <a href="/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" style="color: #00bcd4">
+                <a href="/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" style="color: #ff7d73">
                     深度学习
                 </a>
             </span>
@@ -206,47 +206,43 @@
     
     <div class="content" v-pre>
         <h3 id="第1题（单选题）"><a href="#第1题（单选题）" class="headerlink" title="第1题（单选题）"></a><strong>第1题（单选题）</strong></h3><p><strong>题目：</strong> 关于卷积神经网络（CNN）中卷积核的设计，以下说法正确的是？<br><strong>选项：</strong><br>A 对于彩色图像输入（3通道），卷积核的深度可以等于输入通道数（即3）。<br>B 多个卷积核会生成多个特征图，但所有特征图共享同一组权重参数。<br>C 卷积核的大小必须与输入特征图的空间尺寸（高度&#x2F;宽度）一致。<br>D 使用步长（stride）大于1的卷积操作会显著增加模型参数数量。  </p>
-<p><strong>答案：</strong><span class="heimu" title="你知道的太多了"> A</span><br><strong>分析：</strong>  <p class="heimu" title="你知道的太多了"></p>
-<ul>
-<li>A正确：CNN里，卷积核深度&#x3D;输入通道数，卷积核个数&#x3D;输出通道数。  </li>
-<li>B错误：每个卷积核有独立的权重参数，生成一个独立的特征图；多个卷积核生成多个特征图，但权重不共享。  </li>
-<li>C错误：卷积核大小（如3×3或5×5）通常远小于输入特征图的空间尺寸（如224×224），无需一致。  </li>
-<li>D错误：步长大于1会减少输出特征图的尺寸，但不影响参数数量；参数数量取决于卷积核大小、输入通道数和输出通道数，与步长无关。  </p></li>
-</ul>
+<p><strong>答案：</strong><span class="heimu" title="你知道的太多了"> A</span><br><strong>分析：</strong> </p>
+ <p class="heimu" title="你知道的太多了">
+<ul><li>A正确：CNN里，卷积核深度=输入通道数，卷积核个数=输出通道数。 </li><li>B错误：每个卷积核有独立的权重参数，生成一个独立的特征图；多个卷积核生成多个特征图，但权重不共享。 </li><li>C错误：卷积核大小（如3×3或5×5）通常远小于输入特征图的空间尺寸（如224×224），无需一致。 </li><li>D错误：步长大于1会减少输出特征图的尺寸，但不影响参数数量；参数数量取决于卷积核大小、输入通道数和输出通道数，与步长无关。 <p></p></li></ul>
+ </p>
+
 <hr>
 <h3 id="第2题（单选题）"><a href="#第2题（单选题）" class="headerlink" title="第2题（单选题）"></a><strong>第2题（单选题）</strong></h3><p><strong>题目：</strong> 以下关于人工神经网络的说法哪个是不正确的？<br><strong>选项：</strong><br>A 反向传播算法基于链式法则计算梯度<br>B Softmax函数常用于多分类问题的输出层<br>C 激活函数ReLU比Sigmoid更可能导致出现梯度消失问题<br>D Adam优化器是自适应学习率优化器  </p>
-<p><strong>答案：</strong> <span class="heimu" title="你知道的太多了">C</span><br><strong>分析：</strong>  <p class="heimu" title="你知道的太多了"></p>
-<ul>
-<li>C不正确：ReLU激活函数在正区间梯度恒为1，不易导致梯度消失；而Sigmoid在输入值较大时梯度接近0，更容易出现梯度消失问题。因此，ReLU比Sigmoid更不容易导致梯度消失。 </p></li>
-</ul>
+<p><strong>答案：</strong> <span class="heimu" title="你知道的太多了">C</span><br><strong>分析：</strong> </p>
+<p class="heimu" title="你知道的太多了">
+<ul><li>C不正确：ReLU激活函数在正区间梯度恒为1，不易导致梯度消失；而Sigmoid在输入值较大时梯度接近0，更容易出现梯度消失问题。因此，ReLU比Sigmoid更不容易导致梯度消失。 <p></p></li></ul>
+</p>
+
 <hr>
 <h3 id="第3题（单选题）"><a href="#第3题（单选题）" class="headerlink" title="第3题（单选题）"></a><strong>第3题（单选题）</strong></h3><p><strong>题目：</strong> 在训练深度神经网络时，关于不同梯度下降优化算法的说法，哪项是正确的？<br><strong>选项：</strong><br>A 批量梯度下降 (Batch Gradient Descent) 在每次参数更新时仅使用一个训练样本，因此更新速度最快，但收敛过程波动较大。<br>B 随机梯度下降 (Stochastic Gradient Descent, SGD) 在每次参数更新时使用全部训练数据，因此梯度估计最准确，但计算开销巨大且难以处理大规模数据集。<br>C 小批量梯度下降 (Mini-batch Gradient Descent) 结合了批量梯度下降和随机梯度下降的优点，是目前训练深度学习模型最常用的优化方法。<br>D 动量 (Momentum) 方法引入的目的是为了在梯度方向变化剧烈时增大更新步长，从而加速收敛。  </p>
-<p><strong>答案：</strong> <span class="heimu" title="你知道的太多了">C</span><br><strong>分析：</strong>  <p class="heimu" title="你知道的太多了"></p>
-<ul>
-<li>AB弄反了。</li>
-<li>D错误：动量方法的目的是在梯度方向变化时减少振荡（通过累积历史梯度），从而稳定收敛，而非增大步长。  </p></li>
-</ul>
+<p><strong>答案：</strong> <span class="heimu" title="你知道的太多了">C</span><br><strong>分析：</strong>  </p>
+<p class="heimu" title="你知道的太多了">
+    <ul><li>AB弄反了。</li><li>D错误：动量方法的目的是在梯度方向变化时减少振荡（通过累积历史梯度），从而稳定收敛，而非增大步长。 <p></p></li></ul>
+</p>
+
 <hr>
 <h3 id="第4题（单选题）"><a href="#第4题（单选题）" class="headerlink" title="第4题（单选题）"></a><strong>第4题（单选题）</strong></h3><p><strong>题目：</strong> 关于 Batch Normalization（BN）的作用，以下哪项描述是错误的？<br><strong>选项：</strong><br>A. BN 可以加速模型训练<br>B. BN 会降低模型的表达能力<br>C. BN 通过归一化输入使得不同 mini-batch 的数据在每一层输入分布更一致<br>D. BN 在推理阶段使用训练时估计的均值和方差  </p>
-<p><strong>答案：</strong><span class="heimu" title="你知道的太多了"> B</span><br><strong>分析：</strong>  <p class="heimu" title="你知道的太多了"></p>
-<p>批归一化的工作原理：</p>
-<ol>
-<li><strong>计算均值和方差</strong>：对于给定的小批量数据，计算其均值和方差。</li>
-<li><strong>规范化</strong>：使用计算出的均值和方差对数据进行规范化处理，确保数据分布具有零均值和单位方差。</li>
-<li><strong>缩放和偏移</strong>：引入可学习的参数（缩放参数（gamma）和平移参数（beta）），对规范化后的数据进行缩放和偏移，以恢复网络的表达能力。</li>
-</ol>
-<p>可见，引入参数进行缩放偏移，可以保留模型的表达能力。  </p></p>
+<p><strong>答案：</strong><span class="heimu" title="你知道的太多了"> B</span><br><strong>分析：</strong> </p>
+<p class="heimu" title="你知道的太多了">
+    <p>批归一化的工作原理：</p>
+<ol><li><strong>计算均值和方差</strong>：对于给定的小批量数据，计算其均值和方差。</li><li><strong>规范化</strong>：使用计算出的均值和方差对数据进行规范化处理，确保数据分布具有零均值和单位方差。</li><li><strong>缩放和偏移</strong>：引入可学习的参数（缩放参数（gamma）和平移参数（beta）），对规范化后的数据进行缩放和偏移，以恢复网络的表达能力。</li></ol>
+<p>可见，引入参数进行缩放偏移，可以保留模型的表达能力。 </p>
+</p>
+
 <hr>
 <h3 id="第5题（单选题）"><a href="#第5题（单选题）" class="headerlink" title="第5题（单选题）"></a><strong>第5题（单选题）</strong></h3><p><strong>题目：</strong> 以下关于原始CAM（Class Activation Mapping）的说法中，哪一项是正确的？<br><strong>选项：</strong><br>A CAM 可以应用于任意结构的 CNN，无需修改网络<br>B CAM 依赖于全连接层的权重来生成激活图的贡献<br>C CAM 通过反向传播计算每个特征图对分类结果的贡献<br>D CAM 能够生成高分辨率的可视化结果  </p>
-<p><strong>答案：</strong><span class="heimu" title="你知道的太多了"> B</span><br><strong>分析：</strong>  <p class="heimu" title="你知道的太多了"></p>
-<p>类激活映射（CAM）的工作原理：</p>
-<ul>
-<li><p>CAM的核心思想是利用CNN的特征图（feature maps）来确定图像中对分类决策贡献最大的区域。在传统的CNN结构中，卷积层后通常会接一个全连接层来进行分类。CAM方法提出了一种替代方案，即使用全局平均池化层（Global Average Pooling，GAP）来代替全连接层，这样做的好处是减少了模型参数，同时保持了空间信息，有助于定位图像中的关键区域<a target="_blank" rel="noopener" href="https://blog.csdn.net/shuaibuzhi1mian/article/details/125462090">1</a>。</p>
-</li>
-<li><p>在CAM中，每个类别的激活图是通过对最后一个卷积层的特征图进行加权求和得到的。权重是从训练好的网络中学到的，与特定类别相关联。通过这种方式，CAM可以生成一张热力图，显示了每个类别在图像中的激活区域<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_44722174/article/details/117000910">2</a>。</p>
-</li>
-</ul>
-<p>看选项，A错在CAM实际上必须要有GAP层；C错在CAM实际上是用权重和特征图前向计算得到分类结果。</p></p>
+<p><strong>答案：</strong><span class="heimu" title="你知道的太多了"> B</span><br><strong>分析：</strong></p>
+<p class="heimu" title="你知道的太多了">
+    <p>类激活映射（CAM）的工作原理：</p>
+<ul><li><p>CAM的核心思想是利用CNN的特征图（feature maps）来确定图像中对分类决策贡献最大的区域。在传统的CNN结构中，卷积层后通常会接一个全连接层来进行分类。CAM方法提出了一种替代方案，即使用全局平均池化层（Global Average Pooling，GAP）来代替全连接层，这样做的好处是减少了模型参数，同时保持了空间信息，有助于定位图像中的关键区域<a target="_blank" rel="noopener" href="https://blog.csdn.net/shuaibuzhi1mian/article/details/125462090">1</a>。</p></li><li><p>在CAM中，每个类别的激活图是通过对最后一个卷积层的特征图进行加权求和得到的。权重是从训练好的网络中学到的，与特定类别相关联。通过这种方式，CAM可以生成一张热力图，显示了每个类别在图像中的激活区域<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_44722174/article/details/117000910">2</a>。</p></li></ul>
+<p>看选项，A错在CAM实际上必须要有GAP层；C错在CAM实际上是用权重和特征图前向计算得到分类结果。</p>
+</p>
+
 <hr>
 <p>剩下的待会来写……</p>
 
