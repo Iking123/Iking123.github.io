@@ -6,7 +6,7 @@ mixins.home = {
         background.style.backgroundImage = `url('${images[id]}')`;
         this.menuColor = true;
 
-        // 来自Createsequence的自动截取摘要~（被我微调了一下，适应我这个博客的CSS类名）
+        // 魔改自Createsequence的自动截取摘要~（我改了改他的getAbstract具体操作，以适应我这个博客的HTML和CSS）
         window.onload = function() {
             return getAbstract();
         }
@@ -23,17 +23,12 @@ mixins.home = {
             for (let i = 0; i < arts.length; i++) {
                 let dom = arts[i];
                 // process post body
-                let button = dom.getElementsByClassName("go-post")[0];
                 let body = dom.getElementsByClassName("description")[0];
-                body.removeChild(button);
 
                 // resolve abstract content
                 let content = body.textContent;
                 content = content.substring(0, 250) + "......";
                 body.innerHTML = content;
-
-                // append post button
-                body.appendChild(button);
             }
         }
     },
