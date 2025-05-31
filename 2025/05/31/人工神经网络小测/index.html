@@ -3,7 +3,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="utf-8" />
-    <title>Iking的小屋</title>
+    <title>人工神经网络小测 | Iking的小屋</title>
     <meta name="author" content="Iking" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -42,7 +42,13 @@
 
 
 
-<script src="/js/lib/home.js"></script>
+
+<script src="https://s4.zstatic.net/ajax/libs/waline/2.15.8/waline.min.js"></script>
+<link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/waline/2.15.8/waline.min.css" />
+<link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/waline/2.15.8/waline-meta.min.css" />
+
+
+
 
 <link rel="stylesheet" href="/css/main.css" />
 
@@ -152,39 +158,17 @@
 </transition>
 
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
-            <div id="home-head">
-    <div
-        id="home-background"
-        ref="homeBackground"
-        data-images="/images/background.jpg"
-    ></div>
-    <div id="home-info" @click="homeClick">
-        <span class="loop"></span>
-        <span class="loop"></span>
-        <span class="loop"></span>
-        <span class="loop"></span>
-        <span class="info">
-            <div class="wrap">
-                <h1>Iking的小屋</h1>
-                <h3></h3>
-                <h5></h5>
-            </div>
-        </span>
+            <div class="article">
+    <div>
+        <h1>人工神经网络小测</h1>
     </div>
-</div>
-<div
-    id="home-posts-wrap"
-    ref="homePostsWrap"
-    true
->
-    <div id="home-posts">
-        
-
-<div class="post">
-    <a href="/2025/05/31/%E4%BA%BA%E5%B7%A5%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%B0%8F%E6%B5%8B/">
-        <h2 class="post-title">人工神经网络小测</h2>
-    </a>
-    <div class="category-and-date">
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2025/5/31
+        </span>
         
         <span class="category">
             <a href="/categories/AI/">
@@ -195,19 +179,33 @@
             </a>
         </span>
         
-        <span class="date">
+        
+        <span class="tags">
             <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
+                <i class="fa-solid fa-tags fa-fw"></i>
             </span>
-            2025/5/31
+            
+            
+            <span class="tag">
+                
+                <a href="/tags/AI/" style="color: #00bcd4">
+                    AI
+                </a>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" style="color: #ff7d73">
+                    深度学习
+                </a>
+            </span>
+            
         </span>
         
-        
     </div>
-    <div class="description">
-        <div class="content" v-pre>
-            
-            <h3 id="第1题（单选题）"><a href="#第1题（单选题）" class="headerlink" title="第1题（单选题）"></a><strong>第1题（单选题）</strong></h3><p><strong>题目：</strong> 关于卷积神经网络（CNN）中卷积核的设计，以下说法正确的是？<br><strong>选项：</strong><br>A 对于彩色图像输入（3通道），卷积核的深度可以等于输入通道数（即3）。<br>B 多个卷积核会生成多个特征图，但所有特征图共享同一组权重参数。<br>C 卷积核的大小必须与输入特征图的空间尺寸（高度&#x2F;宽度）一致。<br>D 使用步长（stride）大于1的卷积操作会显著增加模型参数数量。  </p>
+    
+    <div class="content" v-pre>
+        <h3 id="第1题（单选题）"><a href="#第1题（单选题）" class="headerlink" title="第1题（单选题）"></a><strong>第1题（单选题）</strong></h3><p><strong>题目：</strong> 关于卷积神经网络（CNN）中卷积核的设计，以下说法正确的是？<br><strong>选项：</strong><br>A 对于彩色图像输入（3通道），卷积核的深度可以等于输入通道数（即3）。<br>B 多个卷积核会生成多个特征图，但所有特征图共享同一组权重参数。<br>C 卷积核的大小必须与输入特征图的空间尺寸（高度&#x2F;宽度）一致。<br>D 使用步长（stride）大于1的卷积操作会显著增加模型参数数量。  </p>
 <p><strong>答案：</strong> A<br><strong>分析：</strong>  </p>
 <ul>
 <li>A正确：CNN里，卷积核深度&#x3D;输入通道数，卷积核个数&#x3D;输出通道数。  </li>
@@ -252,116 +250,20 @@
 <hr>
 <h3 id=""><a href="#" class="headerlink" title=""></a></h3><p>剩下的待会来写……</p>
 
-            
+    </div>
+    
+    
+    
+    
+    
+    <!-- 样式文件 -->
+    <link rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css" />
+    <div id="comment">
+        <div id="waline-container">
         </div>
     </div>
-    <div class="post-tags">
-        
-        <span class="icon">
-            <i class="fa-solid fa-tags fa-fw"></i>
-        </span>
-        
-        
-        
-        <span class="tag">
-            
-            <a href="/tags/AI/" style="color: #00a596">AI</a>
-        </span>
-        
-        <span class="tag">
-            
-            <a href="/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" style="color: #ffa2c4">深度学习</a>
-        </span>
-        
-    </div>
-    <a href="/2025/05/31/%E4%BA%BA%E5%B7%A5%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%B0%8F%E6%B5%8B/" class="go-post">阅读全文</a>
-</div>
-
-<div class="post">
-    <a href="/2025/05/30/%E4%B8%80%E4%B8%AA%E6%9C%89%E5%85%B3ds%E7%9A%84%E5%B0%8F%E5%8F%91%E7%8E%B0/">
-        <h2 class="post-title">一个有关ds的小发现</h2>
-    </a>
-    <div class="category-and-date">
-        
-        <span class="category">
-            <a href="/categories/AI/">
-                <span class="icon">
-                    <i class="fa-solid fa-bookmark fa-fw"></i>
-                </span>
-                AI
-            </a>
-        </span>
-        
-        <span class="date">
-            <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
-            </span>
-            2025/5/30
-        </span>
-        
-        
-    </div>
-    <div class="description">
-        <div class="content" v-pre>
-            
-            <p>（ds就是deepseek啦……）</p>
-<p>手机app可以渲染出<code>$ $</code>这样以美元号包裹的LaTeX公式，网页版只能渲染出<code>\( \)</code>这样包裹的公式。</p>
-<p>不过手机app有些公式渲染不出来，所以也不是手机版的前端就更好……</p>
-
-            
-        </div>
-    </div>
-    <div class="post-tags">
-        
-        <span class="icon">
-            <i class="fa-solid fa-tags fa-fw"></i>
-        </span>
-        
-        
-        
-        <span class="tag">
-            
-            <a href="/tags/AI/" style="color: #00a596">AI</a>
-        </span>
-        
-        <span class="tag">
-            
-            <a href="/tags/DeepSeek/" style="color: #03a9f4">DeepSeek</a>
-        </span>
-        
-    </div>
-    <a href="/2025/05/30/%E4%B8%80%E4%B8%AA%E6%9C%89%E5%85%B3ds%E7%9A%84%E5%B0%8F%E5%8F%91%E7%8E%B0/" class="go-post">阅读全文</a>
-</div>
-
-
-        <div class="page-current">
-    
-    <span class="current">1</span>
     
     
-    
-    
-</div>
-
-    </div>
-    
-    <div id="home-card">
-        <div id="card-style">
-    <div id="card-div">
-        <div class="avatar">
-            <img src="/images/avatar.jpg" alt="avatar" />
-        </div>
-        <div class="name">Iking</div>
-        <div class="description">
-            <p>Description<br>…</p>
-
-        </div>
-        
-        
-    </div>
-</div>
-
-    </div>
     
 </div>
 
@@ -391,6 +293,29 @@
         
     </div>
     <script src="/js/main.js"></script>
+    
+    
+
+
+<script>
+    Waline.init({
+        el: "#waline-container",
+        serverURL: "https://ikingwaline.netlify.app/.netlify/functions/comment",
+        commentCount: true,
+        pageview: true,
+        emoji: "https://unpkg.com/@waline/emojis@1.2.0/weibo,https://unpkg.com/@waline/emojis@1.2.0/alus,https://unpkg.com/@waline/emojis@1.2.0/bilibili,https://unpkg.com/@waline/emojis@1.2.0/qq,https://unpkg.com/@waline/emojis@1.2.0/tieba,https://unpkg.com/@waline/emojis@1.2.0/tw-emoji".split(","),
+        meta: "nick,mail,link".split(","),
+        requiredMeta: "nick".split(","),
+        lang: "zh-CN",
+        wordLimit: 0,
+        pageSize: "10",
+        login: "enable",
+        
+    });
+</script>
+
+
+
     
 </body>
 </html>
